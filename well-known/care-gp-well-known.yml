@@ -1,0 +1,40 @@
+generated: '2026-07-18'
+method: probed
+source: live GET probes of /.well-known/* on Care GP hosts
+note: >-
+  No .well-known discovery documents are published. Recorded for provenance so re-runs
+  do not re-probe unnecessarily. No WellKnown/SecurityTxt pointer is wired because nothing
+  was found (absence is valid data). The api.caregp.com.au host does not resolve.
+hosts:
+- host: https://caregp.com.au
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/mcp.json
+    status: 404
+- host: https://agent.caregp.com.au
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/mcp.json
+    status: 404
